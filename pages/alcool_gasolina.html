@@ -36,7 +36,49 @@
   <body>
     <div class="container">
       <h1>Álcool ou Gasolina?</h1>
+      <label class="lead">Quantos Km/L seu carro faz com Gasolina?</label><br />
+      <input
+        type="text"
+        placeholder="digite apenas números"
+        name="kmGas"
+        id="km-gas"
+        required
+      /><br />
+      <label class="lead">Quantos Km/L seu carro faz com Álcool?</label><br />
+      <input
+        type="text"
+        placeholder="digite apenas números"
+        name="kmAlc"
+        id="km-alc"
+        required
+      /><br />
+      <label class="lead">Qual o valor da Gasolina?</label><br />
+      <input
+        type="text"
+        placeholder="digite apenas números"
+        name="valueGas"
+        id="value-gas"
+        required
+      /><br />
+      <label class="lead">Qual o valor do Álcool?</label><br />
+      <input
+        type="text"
+        placeholder="digite apenas números"
+        name="valueAlc"
+        id="value-alc"
+      /><br />
+      <input type="submit" value="Calcular" id="submit" onclick="submit()" />
+      <div id="container-answer">
+        <h4>
+          Preencha os campos acima e veja qual o combustível mais vantajoso!
+        </h4>
+      </div>
     </div>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+    <!-- / JS -->
+
     <!-- Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
